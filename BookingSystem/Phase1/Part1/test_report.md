@@ -1,38 +1,39 @@
 # 1️⃣ Introduction
 
 **Tester(s):**  
-- Name:  
+- Name: Toni Hautamäki 
 
 **Purpose:**  
-- Describe the purpose of this test (e.g., identify vulnerabilities in registration and authentication flows).
+- Identify vulnerabilities in user registration flow.
 
 **Scope:**  
-- Tested components:  
-- Exclusions:  
-- Test approach: Gray-box / Black-box / White-box
+- Tested components:  User registration
+- Exclusions:  -
+- Test approach: White-box
 
 **Test environment & dates:**  
-- Start:  
-- End:  
-- Test environment details (OS, runtime, DB, browsers):
+- Start:  18.11.2025
+- End:  18.11.2025
+- Test environment details: Windows 11 pro, Docker desktop, PostgreSQL, Google chrome
 
 **Assumptions & constraints:**  
-- e.g., credentials provided, limited time, etc.
+- Must be performed in self hosted environment
 
 ---
 
 # 2️⃣ Executive Summary
 
-**Short summary (1-2 sentences):**  
+**Short summary:**  
+I ran baseline scan with ZAP to the given application which run in docker environment.
 
-**Overall risk level:** (Low / Medium / High / Critical)
+**Overall risk level:** High
 
 **Top 5 immediate actions:**  
-1.  
-2.  
-3.  
-4.  
-5.  
+1.  Resolve path traversal vulnerabilities
+2.  Resolve SQL injection vulnerabilities
+3.  Deploy Anti-CSRF tokens
+4.  Set Content Security Policy header
+5.  Set Anti-clickjacking headers
 
 ---
 
@@ -48,44 +49,22 @@
 
 ---
 
-# 4️⃣ Findings (filled with examples → replace)
-
-> Fill in one row per finding. Focus on clarity and the most important issues.
+# 4️⃣ Findings
 
 | ID | Severity | Finding | Description | Evidence / Proof |
 |------|-----------|----------|--------------|------------------|
-| F-01 | 🔴 High | SQL Injection in registration | Input field allows `' OR '1'='1` injection | Screenshot or sqlmap result |
-| F-02 | 🟠 Medium | Session fixation | Session ID remains unchanged after login | Burp log or response headers |
-| F-03 | 🟡 Low | Weak password policy | Accepts passwords like "12345" | Screenshot of registration success |
+| F-01 | 🔴 High | Path traversal possible | /register in url return `` | View ZAP report |
+| F-02 | 🔴 High | SQL injection in registration | Input allows `'` and `AND 1=1`| View ZAP report |
+| F-03 | 🟠 Medium | Anti-CSRF tokens missing | Registering doesn't use tokens | View ZAP report |
+| F-04 | 🟠 Medium | CSP header not set | CSP headers missing | View ZAP report |
+| F-05 | 🟠 Medium | Anti-clickjacking header missing | Anti-clickjacking headers missing | View ZAP report |
 
----
-
-> [!NOTE]
-> Include up to 5 findings total.   
-> Keep each description short and clear.
 
 ---
 
 # 5️⃣ OWASP ZAP Test Report (Attachment)
 
 **Purpose:**  
-- Attach or link your OWASP ZAP scan results (Markdown format preferred).
-
----
-
-**Instructions (CMD version):**
-1. Run OWASP ZAP baseline scan:  
-   ```bash
-   zap-baseline.py -t https://example.com -r zap_report_round1.html -J zap_report.json
-   ```
-2. Export results to markdown:  
-   ```bash
-   zap-cli report -o zap_report_round1.md -f markdown
-   ```
-3. Save the report as `zap_report_round1.md` and link it below.
-
----
-> [!NOTE]
-> 📁 **Attach full report:** → `check itslearning` → **Add a link here**
+- [You can view ZAP report here](../zap_report_round1.md)
 
 ---
