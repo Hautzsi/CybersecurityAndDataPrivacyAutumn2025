@@ -65,6 +65,6 @@ I ran baseline scan with ZAP to the given application which run in docker enviro
 # 5️⃣ OWASP ZAP Test Report (Attachment)
 
 **Purpose:**  
-- [You can view ZAP report here](../zap_report_round1.md)
+- [You can view round 1 ZAP report here](../zap_report_round1.md) and [round 2 ZAP report here](../zap_report_round2.md)
 
 ---
