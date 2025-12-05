@@ -10,3 +10,4 @@
 | 18.11.2025 | 4 | Booking system | Phase 1 Part 1 step 1, 2 and partially 3 |
 | 24.11.2025 | 1 | Booking system | Phase 1 Part 1 step 3 finishing |
 | 1.12.2025 | 1 | Booking system | Phase 1 Part 2 step 1 & 2 |
+| 12.12.2025 | 1 | Booking system | Phase 1 Part 2 Step 3 |
