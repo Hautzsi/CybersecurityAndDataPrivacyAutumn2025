@@ -13,3 +13,6 @@
 | 2.12.2025 | 1 | Booking system | Phase 1 Part 2 Step 3 |
 | 7.12.2025 | 3 | Booking system | Phase 2 |
 | 8.12.2025 | 1 | Booking system | Phase 2 cracking report |
+| 12.12.2025 | 5 | Booking system | Phase 3 figuring out the assignment and preparations |
+| 14.12.2025 | 6 | Booking system | Phase 3 wfuzz |
+| 15.12.2025 | 4 | Booking system | Phase 3  wfuzz and ZAP |
