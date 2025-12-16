@@ -16,3 +16,4 @@
 | 12.12.2025 | 5 | Booking system | Phase 3 figuring out the assignment and preparations |
 | 14.12.2025 | 6 | Booking system | Phase 3 wfuzz |
 | 15.12.2025 | 4 | Booking system | Phase 3  wfuzz and ZAP |
+| 16.12.2025 | 4 | Booking system | Finishing Phase 3 |
