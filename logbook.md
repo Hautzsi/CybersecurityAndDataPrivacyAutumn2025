@@ -17,3 +17,7 @@
 | 14.12.2025 | 6 | Booking system | Phase 3 wfuzz |
 | 15.12.2025 | 4 | Booking system | Phase 3  wfuzz and ZAP |
 | 16.12.2025 | 4 | Booking system | Finishing Phase 3 |
+| 17.12.2025 | 3 | Booking system | Starting Phase 4 |
+
+---
+### yht. 51h
